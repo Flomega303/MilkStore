@@ -1,0 +1,249 @@
+<html lang="en"><head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Milk Store</title>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@700&amp;display=swap">  
+    <style>  
+        body {  
+            margin: 0;  
+            font-family: 'Montserrat', sans-serif;  
+            background-color: #f9f9f9;  
+            color: #333;  
+            scroll-behavior: smooth;  
+        }  
+
+        header {  
+            text-align: center;  
+            padding: 20px;  
+            background-color: rgba(219, 54, 236, 0.9);  
+            color: white;  
+        }  
+
+        h1 {  
+            font-family: 'Playfair Display', serif;  
+            font-size: 2.5em;  
+        }  
+
+        h2 {  
+            margin: 10px 0;  
+        }  
+
+        .nav-buttons {  
+            margin-top: 15px;  
+        }  
+
+        .nav-buttons a {  
+            color: white;  
+            text-decoration: none;  
+            margin: 0 15px;  
+            padding: 10px 15px;  
+            border-radius: 5px;  
+            transition: background-color 0.3s ease;  
+        }  
+
+        .nav-buttons a:hover {  
+            background-color: rgba(0, 0, 0, 0.1);  
+        }  
+
+        .container,  
+        #about,  
+        #contact-us {  
+            display: grid;  
+            grid-template-columns: 1fr 1fr;  
+            gap: 20px;  
+            padding: 80px 50px;  
+            margin-top: 50px;  
+            border-radius: 20px;  
+            background: white;  
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+        }  
+
+        #about {  
+            background-color: rgba(219, 54, 236, 0.1); /* Light Pink */  
+        }  
+
+        #contact-us {  
+            background-color: rgba(54, 123, 236, 0.1); /* Light Blue */  
+        }  
+
+        .left-info, .about-info, .contact-info {  
+            padding: 20px;  
+            border-radius: 15px;  
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);  
+            transition: transform 0.3s ease, box-shadow 0.3s ease;  
+        }  
+
+        .left-info:hover, .about-info:hover, .contact-info:hover {  
+            transform: translateY(-5px);  
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);  
+        }  
+
+        .right-images, .about-images {  
+            padding: 20px;  
+        }  
+
+        .right-images img, .about-images img {  
+            width: 100%;  
+            height: auto;  
+            border-radius: 20px;  
+            transition: transform 0.3s ease, box-shadow 0.3s ease;  
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  
+        }  
+
+        .right-images img:hover, .about-images img:hover {  
+            transform: scale(1.05);  
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);  
+        }  
+
+        .footer-buttons {  
+            position: fixed;  
+            left: 10px;  
+            bottom: 20px;  
+            display: flex;  
+            flex-direction: column;  
+        }  
+
+        .footer-buttons a {  
+            color: #ffffff;  
+            background-color: rgba(219, 54, 236, 0.8);  
+            text-decoration: none;  
+            padding: 12px 15px;  
+            margin-bottom: 10px;  
+            border-radius: 30px;  
+            text-align: center;  
+            font-weight: 600;  
+            transition: background-color 0.3s ease, transform 0.2s ease;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+        }  
+
+        .footer-buttons a:hover {  
+            background-color: rgba(219, 54, 236, 1);  
+            transform: translateY(-5px);  
+        }  
+
+        #testimonials, #faq {  
+            padding: 40px 50px;  
+            background: white;  
+            border-radius: 20px;  
+            margin: 50px 0;  
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+        }  
+
+        #testimonials h2, #faq h2 {  
+            text-align: center;  
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;  
+        }  
+
+        blockquote {  
+            margin: 10px 0;  
+            font-style: italic;  
+            color: #555;  
+        }  
+
+        #answer {
+            margin-left: 7%;
+        }
+
+        #questions {
+            margin-left: 7%;
+        }
+
+        @media (max-width: 768px) {  
+            .container, #about, #contact-us {  
+                grid-template-columns: 1fr;  
+            }  
+            .footer-buttons {  
+                position: relative;  
+                bottom: 0;  
+                left: 0;  
+                width: 100%;  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+
+    <!-- Header Section -->  
+    <header>  
+        <h1>Milk Store!</h1>  
+        <h2>Kit Shop for 8b8t &amp; 6b6t</h2>  
+        <div class="nav-buttons">  
+            <a href="#home">Home</a>  
+            <a href="#about">About Us</a>  
+            <a href="#contact-us">Contact Us</a>  
+            <a href="#testimonials">Testimonials</a>  
+            <a href="#faq">FAQ</a>  
+        </div>  
+    </header>  
+
+    <!-- Main Content Section -->  
+    <div class="container" id="home">  
+        <!-- Left Info Section -->  
+        <div class="left-info">  
+            <h3>Welcome to Milk Store</h3>  
+            <p>Milk Store is a dedicated kit shop for Minecraft anarchy servers 8b8t and 6b6t. We provide a selection of essential kits available for purchase through Discord invites or real money. Equip yourself with the necessary gear to navigate the challenges of the game.</p>  
+            <p>Visit us to find the right kit for your needs.</p>  
+        </div>  
+
+        <!-- Right Image Section -->  
+        <div class="right-images">  
+            <img src="Milk.png" alt="Kit Image 1">  
+            <img src="cozmic.png" alt="Kit Image 2">  
+        </div>  
+    </div>  
+
+    <!-- About Us Section -->  
+    <div id="about">  
+        <div class="about-info">  
+            <h3>About Us</h3>  
+            <p>In the wild world of Minecraft, having the right gear can really make a difference in your gameplay. Our shop has a variety of kits that cater to different styles, whether you want to sneak around or go all out in battle. Each kit is specifically designed to help you handle the unique challenges of the 8b8t and 6b6t servers, so you can jump into the action feeling confident.</p>  
+            <p>We focus on making your shopping experience easy and quick. You can buy kits directly through Discord invites, making it convenient to get what you need while staying connected with the community. Our goal is to help you spend less time shopping and more time playing.</p>  
+        </div>  
+
+        <div class="about-images">  
+            <img src="2024-05-27_15.02.59.png" alt="About Us Image">  
+        </div>  
+    </div>  
+
+    <!-- Contact Us Section (Discord Style) -->  
+    <div id="contact-us">  
+        <div class="contact-info">  
+            <h3>Contact Us</h3>  
+            <p>Join our Discord to purchase kits or ask questions.</p>  
+            <p><strong>Discord Link:</strong> <a href="https://discord.gg/milkstore" style="color: rgba(219, 54, 236, 1);">Join our Discord</a></p>  
+        </div>  
+
+        <div class="right-images">  
+            <img src="Screenshot 2024-10-08 111849.png" alt="Discord Community Image">  
+        </div>  
+    </div>  
+
+    <!-- Testimonials Section -->  
+    <section id="testimonials">  
+        <h2>What Our Customers Say</h2>  
+        <blockquote>"fast deliver and he gave me extra kits 100% recommended!" - Customer</blockquote>  
+        <blockquote>"Very fast, thanks for the free stuff and for saying happy bday to me" - Customer</blockquote>  
+    </section>  
+
+    <!-- FAQ Section -->  
+    <section id="faq">  
+        <h2>Frequently Asked Questions</h2>  
+        <div>     
+            <h3 id="questions">How do I purchase kits?</h3>  
+            <p id="answer">You can purchase kits through our Discord server. Check our Contact Us section for the link.</p>  
+        </div>  
+        <div>  
+            <h3 id="questions">What payment methods do you accept?</h3>  
+            <p id="answer">We accept both Discord Invites and real money.</p>  
+        </div>  
+    </section>  
+
+    <!-- Footer Social Media Buttons -->  
+    <div class="footer-buttons">  
+        <a href="">YouTube</a>  
+        <a href="https://discord.gg/milkstore">Discord</a>  
+       
+    </div>  
+
+  
+</body></html>
